@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>Mon Blog</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="about.html" class="nav-link">À propos</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle">🌙</button>
+                    <button class="nav-toggle" id="nav-toggle">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="page-title">Contactez-moi</h1>
+                <p class="page-subtitle">N'hésitez pas à me contacter pour toute question ou collaboration</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Restons en contact</h2>
+                        <p>Je suis toujours ravi d'échanger avec d'autres passionnés de technologie. Que ce soit pour une question, une collaboration ou simplement pour discuter, n'hésitez pas à me contacter.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>contact@monblog.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-details">
+                                    <h3>Téléphone</h3>
+                                    <p>+33 1 23 45 67 89</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h3>Localisation</h3>
+                                    <p>Paris, France</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-contact">
+                            <h3>Suivez-moi</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">Twitter</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">GitHub</a>
+                                <a href="#" class="social-link">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Prénom</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Nom</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Choisissez un sujet</option>
+                                    <option value="question">Question générale</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="feedback">Feedback sur le blog</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        </form>
+                        
+                        <div class="form-success" id="form-success" style="display: none;">
+                            <h3>Message envoyé !</h3>
+                            <p>Merci pour votre message. Je vous répondrai dans les plus brefs délais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Questions fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Combien de temps pour une réponse ?</h3>
+                        <p>Je réponds généralement dans les 24-48 heures aux messages reçus.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Proposez-vous des services de développement ?</h3>
+                        <p>Oui, je propose des services de développement web et de conseil technique.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Puis-je proposer un sujet d'article ?</h3>
+                        <p>Absolument ! Je suis toujours ouvert aux suggestions de sujets intéressants.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Organisez-vous des formations ?</h3>
+                        <p>Occasionnellement, je propose des formations et workshops sur le développement web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Mon Blog</h4>
+                    <p>Un blog passionné par la technologie et le développement web.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mon Blog. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Mon Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>Mon Blog</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="about.html" class="nav-link active">À propos</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle">🌙</button>
+                    <button class="nav-toggle" id="nav-toggle">☰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="about-hero">
+            <div class="container">
+                <h1 class="page-title">À propos de moi</h1>
+                <p class="page-subtitle">Découvrez qui je suis et ma passion pour la technologie</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>Bonjour, je suis [Votre Nom]</h2>
+                        <p>Passionné par le développement web et les nouvelles technologies, je partage mes connaissances et expériences à travers ce blog. Avec plus de 5 ans d'expérience dans le domaine, j'ai travaillé sur de nombreux projets variés.</p>
+                        
+                        <h3>Mon parcours</h3>
+                        <p>Diplômé en informatique, j'ai commencé ma carrière en tant que développeur junior avant d'évoluer vers des postes de développeur senior et de lead technique. J'ai eu l'opportunité de travailler avec diverses technologies et frameworks.</p>
+                        
+                        <h3>Mes compétences</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <h4>Frontend</h4>
+                                <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Backend</h4>
+                                <p>Node.js, Python, PHP, Bases de données</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Outils</h4>
+                                <p>Git, Docker, AWS, CI/CD</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Design</h4>
+                                <p>UI/UX, Figma, Photoshop</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Photo de profil" class="profile-image">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h4>50+</h4>
+                                <p>Articles publiés</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>5+</h4>
+                                <p>Années d'expérience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>100+</h4>
+                                <p>Projets réalisés</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Mon parcours professionnel</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>Lead Developer</h3>
+                            <p>Direction d'une équipe de développeurs sur des projets d'envergure</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h3>Senior Developer</h3>
+                            <p>Développement d'applications web complexes et mentoring</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020</div>
+                        <div class="timeline-content">
+                            <h3>Full Stack Developer</h3>
+                            <p>Développement frontend et backend sur diverses technologies</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2019</div>
+                        <div class="timeline-content">
+                            <h3>Junior Developer</h3>
+                            <p>Premiers pas dans le développement web professionnel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Mon Blog</h4>
+                    <p>Un blog passionné par la technologie et le développement web.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mon Blog. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
