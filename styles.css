@@ -922,6 +922,9 @@ body {
   .articles-grid {
     grid-template-columns: 1fr;
   }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
 
   .about-grid,
   .contact-grid {
