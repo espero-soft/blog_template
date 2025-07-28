@@ -713,3 +713,73 @@ if ("serviceWorker" in navigator) {
       })
   })
 }
+
+// Lightbox pour la galerie
+function initLightbox() {
+  const galleryItems = document.querySelectorAll('.gallery-item img');
+  
+  // Créer l'élément lightbox
+  const lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  lightbox.innerHTML = `
+    <div class="lightbox-content">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-image" src="" alt="">
+      <div class="lightbox-nav">
+        <button class="lightbox-prev">&#8249;</button>
+        <button class="lightbox-next">&#8250;</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(lightbox);
+  
+  let currentIndex = 0;
+  
+  // Fonction pour ouvrir le lightbox
+  function openLightbox(index) {
+    currentIndex = index;
+    const img = galleryItems[index];
+    lightbox.querySelector('.lightbox-image').src = img.src;
+    lightbox.querySelector('.lightbox-image').alt = img.alt;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  // Fonction pour fermer le lightbox
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  
+  // Navigation
+  function showPrevImage() {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : galleryItems.length - 1;
+    openLightbox(currentIndex);
+  }
+  
+  function showNextImage() {
+    currentIndex = currentIndex < galleryItems.length - 1 ? currentIndex + 1 : 0;
+    openLightbox(currentIndex);
+  }
+  
+  // Event listeners
+  galleryItems.forEach((img, index) => {
+    img.addEventListener('click', () => openLightbox(index));
+  });
+  
+  lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+  lightbox.querySelector('.lightbox-prev').addEventListener('click', showPrevImage);
+  lightbox.querySelector('.lightbox-next').addEventListener('click', showNextImage);
+  
+  // Fermer avec Escape ou clic sur le fond
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+  
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+}
+
+// Initialiser le lightbox au chargement de la page
+document.addEventListener('DOMContentLoaded', initLightbox);
