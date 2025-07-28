@@ -29,7 +29,7 @@ const blogData = {
       author: "Jean Dupont",
       date: "2024-01-15",
       category: "React",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "assets/images/27.jpg",
       tags: ["React", "JavaScript", "Frontend", "Web Development"],
     },
     {
@@ -61,7 +61,7 @@ const blogData = {
       author: "Marie Martin",
       date: "2024-01-10",
       category: "CSS",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "assets/images/28.jpg",
       tags: ["CSS", "Layout", "Grid", "Flexbox", "Responsive"],
     },
     {
@@ -89,7 +89,7 @@ const blogData = {
       author: "Pierre Durand",
       date: "2024-01-05",
       category: "Backend",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "assets/images/29.jpg",
       tags: ["Node.js", "API", "REST", "Express", "Backend"],
     },
     {
@@ -117,7 +117,7 @@ const blogData = {
       author: "Sophie Leroy",
       date: "2023-12-28",
       category: "TypeScript",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "assets/images/30.jpg",
       tags: ["TypeScript", "JavaScript", "Types", "Development", "Programming"],
     },
     {
@@ -151,7 +151,7 @@ const blogData = {
       author: "Thomas Blanc",
       date: "2023-12-20",
       category: "Performance",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "assets/images/31.jpg",
       tags: ["Performance", "Optimization", "Web Vitals", "Speed", "UX"],
     },
     {
@@ -181,7 +181,7 @@ const blogData = {
       author: "Lucas Moreau",
       date: "2023-12-15",
       category: "DevOps",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "assets/images/32.jpg",
       tags: ["Docker", "DevOps", "Containers", "Deployment", "Infrastructure"],
     },
   ],

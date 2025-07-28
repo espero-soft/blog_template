@@ -125,7 +125,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  background: linear-gradient(rgba(37, 99, 235, 0.8), rgba(147, 51, 234, 0.8)), url("assets/images/35.jpg"); background-size: cover; background-position: center; background-attachment: fixed;
   color: white;
   padding: 4rem 0;
   text-align: center;
